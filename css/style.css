@@ -1,0 +1,641 @@
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
+ol,ul{list-style:none;margin:0px;padding:0px;}
+blockquote,q{quotes:none;}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
+table{border-collapse:collapse;border-spacing:0;}
+
+a{text-decoration:none;}
+.txt-rt{text-align:right;}
+.txt-lt{text-align:left;}
+.txt-center{text-align:center;}
+.float-rt{float:right;}
+.float-lt{float:left;}
+.clear{clear:both;}
+.pos-relative{position:relative;}
+.pos-absolute{position:absolute;}
+.vertical-base{	vertical-align:baseline;}
+.vertical-top{	vertical-align:top;}
+nav.vertical ul li{	display:block;}
+nav.horizontal ul li{	display: inline-block;}
+img{max-width:100%;}
+/*end reset*/
+
+body{
+	background:url(../images/bg.png)  no-repeat center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+ 	background-size: cover;
+ 	position:relative;
+ 	font-family : 'Sansation Regular', sans-serif;
+
+}
+
+.login-form {
+	background: no-repeat 100% 0%;
+	background-size: 100%;
+	width:37%;
+	margin:10% auto 4% auto;
+ 	position: relative;
+}
+.login-form h1{
+	text-align:left;
+	color: #fff;
+	font-size:1.8em;
+	font-weight:500;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:7%;
+	left:11%;
+	margin:34px 0;
+}
+.login-form h2 a{
+	text-align:right;
+	color: #fff;
+	font-size:1.15em;
+	font-weight:500;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:9.5%;
+	right:11%;
+	margin:34px 0;
+}
+form {
+	padding:32% 3em;
+}
+form li{
+	border:1px solid #FFC600;
+	list-style:none;
+	margin-bottom:16px;
+	width:100%;
+	background: #FFC600;
+}
+
+.icon{
+	background:url(../images/icons.png)  no-repeat 0px 0px;
+	height:40px;
+	width:40px;
+	display: block;
+	float:left;
+	margin:5px -11px 0px 0px
+}
+
+.user{
+	background: url(../images/icons.png) no-repeat 7px 1px;
+
+}
+.lock{
+	background: url(../images/icons.png) no-repeat -31px 2px;
+}
+.arrow{
+	background: url(../images/icons.png) no-repeat -62px 11px;
+	position: absolute;
+}
+input[type="text"], input[type="password"] {
+	font-family : 'Sansation Regular', sans-serif;
+	width:60%;
+	padding: 0.5em 2em 0.5em 1em;
+	color: #fff;
+	font-size:20px;
+	outline: none;
+	background: none;
+	border:none;
+}
+
+input[type="submit"]{
+	float:left;
+	font-size:18px;
+	display: inline-block;
+	font-weight:600;
+	color: #615F5F;
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+	cursor: pointer;
+	outline: none;
+	padding:15px 10px;
+	margin-top:3px;
+	font-family : 'Sansation Regular', sans-serif;
+	background: #222;
+	width:45%;
+	border:1px solid #222;
+}
+input[type="submit"]:hover{
+	background: #FFC600;
+	border:1px solid #FFC600;
+}
+
+input[type="button"]{
+    float:right;
+    font-size:18px;
+    display: inline-block;
+    font-weight:600;
+    color: #615F5F;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding:15px 10px;
+    margin-top:3px;
+    font-family : 'Sansation Regular', sans-serif;
+    background: #222;
+    width:45%;
+    border:1px solid #222;
+}
+input[type="button"]:hover{
+    background: #FFC600;
+    border:1px solid #FFC600;
+}
+
+.login-form-lecturer {
+	background: no-repeat 100% 0%;
+	background-size: 100%;
+	width:37%;
+	margin:10% auto 4% auto;
+ 	position: relative;
+}
+.login-form-lecturer h1{
+	text-align:left;
+	color: #fff;
+	font-size:1.8em;
+	font-weight:500;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:7%;
+	left:30%;
+	margin:34px 0;
+}
+
+.change-panel{
+	margin:30px 7px;
+}
+.change-panel h3 a{
+	color:#fff;
+	font-size:15px;
+	font-family : 'Sansation Regular', sans-serif;
+	float:right;
+	font-weight:600;
+	margin-top:19px;
+}
+.change-panel h3 a:hover{
+    color:#FFC600;
+}
+.lecturer-form {
+    background: no-repeat 100% 0%;
+    background-size: 100%;
+    width:50%;
+    margin:40px auto 20px auto;
+    position: relative;
+}
+.lecturer-form  h1{
+    text-align:center;
+    color: #fff;
+    font-size:1.15em;
+    font-weight:500;
+    font-family : 'Sansation Regular', sans-serif;
+    position:top;
+    left:55%;
+    margin:34px 0;
+}
+.lecturer-form h2{
+    text-align:left;
+    color: #fff;
+    font-size:1.15em;
+    font-weight:500;
+    font-family : 'Sansation Regular', sans-serif;
+    position:absolute;
+    top:9.5%;
+    left:32%;
+    margin:34px 0;
+}
+
+.lecturer-form input[type="button"]{
+    float:center;
+    font-size:18px;
+    display: inline-block;
+    font-weight:600;
+    color: #615F5F;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding:10px 4px;
+    margin-top:-15px;
+    font-family : 'Sansation Regular', sans-serif;
+    background: #222;
+    width:30%;
+    border:1px solid #222;
+}
+
+.lecturer-form input[type="button"]:hover{
+    background: #FFC600;
+    border:1px solid #FFC600;
+}
+
+.lecturer-form  table, td{
+    border-style:ridge;
+	border-width:2px;
+	text-align:center;
+    color: #13A7DD;
+    font-size:1.15em;
+    font-family : 'Sansation Regular', sans-serif;
+
+}
+.lecturer-form form {
+    padding:30% 40px;
+}
+
+.lecturer-form {
+    background: no-repeat 100% 0%;
+    background-size: 100%;
+    width:50%;
+    margin:40px auto 20px auto;
+    position: relative;
+}
+.lecturer-form  h1{
+    text-align:center;
+    color: #fff;
+    font-size:1.15em;
+    font-weight:500;
+    font-family : 'Sansation Regular', sans-serif;
+    position:top;
+    left:55%;
+    margin:34px 0;
+}
+.lecturer-form h2{
+    text-align:left;
+    color: #fff;
+    font-size:1.15em;
+    font-weight:500;
+    font-family : 'Sansation Regular', sans-serif;
+    position:absolute;
+    top:9.5%;
+    left:37.5%;
+    margin:34px 0;
+}
+
+.lecturer-form input[type="button"]{
+    float:center;
+    font-size:18px;
+    display: inline-block;
+    font-weight:600;
+    color: #615F5F;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding:10px 4px;
+    margin-top:-15px;
+    font-family : 'Sansation Regular', sans-serif;
+    background: #222;
+    width:30%;
+    border:1px solid #222;
+}
+
+.lecturer-form input[type="button"]:hover{
+    background: #FFC600;
+    border:1px solid #FFC600;
+}
+
+.lecturer-form  table, td{
+	position:relative;
+	margin-left: 90px;
+	padding-left: 10px;
+    border-style:ridge;
+	border-width:2px;
+	text-align:center;
+    color: #13A7DD;
+    font-size:1.15em;
+    font-family : 'Sansation Regular', sans-serif;
+
+}
+.lecturer-form form {
+    padding:30% 40px;
+}
+.course-form {
+    background: no-repeat 100% 0%;
+    background-size: 100%;
+    width:50%;
+    margin:-200px auto 20px auto;
+    position: relative;
+}
+.course-form h2{
+    text-align:left;
+    color: #fff;
+    font-size:1.15em;
+    font-weight:500;
+    font-family : 'Sansation Regular', sans-serif;
+    position:absolute;
+    top:9.5%;
+    left:38%;
+    margin:34px 0;
+}
+
+.course-form input[type="button"]{
+    float:center;
+    font-size:18px;
+    display: inline-block;
+    font-weight:600;
+    color: #615F5F;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding:10px 5px;
+    margin-top:-15px;
+    font-family : 'Sansation Regular', sans-serif;
+    background: #222;
+    width:30%;
+    border:1px solid #222;
+}
+
+.course-form input[type="button"]:hover{
+    background: #FFC600;
+    border:1px solid #FFC600;
+}
+
+.course-form form {
+    padding:30% 40px;
+}
+
+.add-lecturer {
+	background: no-repeat 100% 0%;
+	background-size: 100%;
+	width:50%;
+	margin:10% auto 4% auto;
+ 	position: relative;
+}
+
+.add-lecturer form {
+    padding:30% 40px;
+}
+
+.add-lecturer input[type="button"] {
+	float:right;
+    font-size:18px;
+    display: inline-block;
+    font-weight:600;
+    color: #615F5F;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding:15px 10px;
+/*  margin-top:-15px; */
+    font-family : 'Sansation Regular', sans-serif;
+    background: #222;
+    width:45%;
+    border:1px solid #222;
+}
+
+.add-lecturer input[type="button"]:hover{
+    background: #FFC600;
+    border:1px solid #FFC600;
+}
+
+.add-lecturer input[type="submit"]{
+	float:left;
+	font-size:18px;
+	display: inline-block;
+	font-weight:600;
+	color: #615F5F;
+	transition: 0.1s all;
+	-webkit-transition: 0.1s all;
+	-moz-transition: 0.1s all;
+	-o-transition: 0.1s all;
+	cursor: pointer;
+	outline: none;
+	padding:15px 10px;
+	margin-top:3px;
+	font-family : 'Sansation Regular', sans-serif;
+	background: #222;
+	width:45%;
+	border:1px solid #222;
+}
+.add-lecturer input[type="submit"]:hover{
+	background: #FFC600;
+	border:1px solid #FFC600;
+}
+
+.style-select {
+	font-family:'Sansation Regular', sans-serif;
+	font-weight: 600;
+	border:1px solid #FFC600;
+	list-style:none;
+	margin-bottom:0px;
+	width:100%;
+	background: #FFC600;
+}
+
+.style {
+	font-family:'Sansation Regular', sans-serif;
+	font-weight: 600;
+	border:1px solid #FFC600;
+	list-style:none;
+	margin-bottom:0px;
+	width:`100%;
+	background: #FFC600;
+}
+
+.add-lecturer h1 {
+	text-align:center;
+	color: #fff;
+	font-size:2em;
+	font-weight:500;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:-5%;
+	left:35%;
+	margin:34px 0;
+}
+
+.add-lecturer h6 {
+	position:absolute;
+	left:100px;
+	right:50px;
+	color: #fff;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:11%;
+	left:12%;
+	margin:34px 0;
+}
+
+.add-lecturer h5{
+	position:absolute;
+	left:100px;
+	right:50px;
+	color: #fff;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:35%;
+	left:9.5%;
+	margin:34px 0;
+}
+
+.add-lecturer h4 {
+	position:absolute;
+	text-align:center;
+	left:100px;
+	right:50px;
+	color: #fff;
+	font-family : 'Sansation Regular', sans-serif;
+	position:absolute;
+	top:15%;
+	left:6%;
+	margin:34px 0;
+}
+
+.style-select-lecture {
+	margin-left:217px;
+	font-family:'Sansation Regular', sans-serif;
+	font-weight: 600;
+	border:1px solid #FFC600;
+	list-style:none;
+	position:absolute;
+	top:25%;
+	margin-bottom:0px;
+	background: #FFC600;
+}
+
+.style-select-lecture-edit {
+	margin-left:217px;
+	font-family:'Sansation Regular', sans-serif;
+	font-weight: 600;
+	border:1px solid #FFC600;
+	list-style:none;
+	position:absolute;
+	top:41%;
+	margin-bottom:0px;
+	background: #FFC600;
+}
+
+.logout input[type="button"]{
+    float:right;
+    font-size:18px;
+    display: inline-block;
+    font-weight:600;
+    color: #615F5F;
+    transition: 0.1s all;
+    -webkit-transition: 0.1s all;
+    -moz-transition: 0.1s all;
+    -o-transition: 0.1s all;
+    cursor: pointer;
+    outline: none;
+    padding:15px 10px;
+    margin-top:3px;
+    font-family : 'Sansation Regular', sans-serif;
+    background: #222;
+    width:150px;
+    border:1px solid #222;
+}
+.logout input[type="button"]:hover{
+    background: #FFC600;
+    border:1px solid #FFC600;
+}
+
+@media (max-width:1024px){
+.login-form  {
+		margin:8% auto 0;
+		width:45%;
+	}
+	.copy-right {
+	left: 41%;
+	bottom:-18%;
+	}
+}
+@media (max-width:768px){
+	.login-form  {
+		margin:12% auto 0;
+		width:57%;
+	}
+	.copy-right {
+	left:38%;
+	bottom:-14%;
+	}
+}
+@media (max-width:640px){
+	.login-form  {
+		margin:13% auto 0;
+		width:70%;
+	}
+	.copy-right {
+	left:36%;
+	bottom:-18%;
+	}
+}
+@media (max-width:480px){
+	.login-form  {
+		margin:20% auto 0;
+		width:90%;
+	}
+	.copy-right {
+	left:30%;
+	bottom:-17%;
+	}
+
+}
+@media (max-width:320px){
+	.login-form  {
+		margin:20% auto 0;
+		width:100%;
+	}
+	.icon{
+		margin:2px -11px 0px 0px;
+	}
+	form{
+		padding:38% 2.5em;
+	}
+	.login-form h1{
+		font-size:1.7em;
+		left:35%;
+		top:0%;
+	}
+	.login-form h2{
+		font-size:1em;
+		right:29%;
+		top:10%;
+	}
+	input[type="text"], input[type="password"]{
+		font-size:18px;
+		padding: 0.4em 1em 0.45em 1em;15px 2px
+	}
+	.copy-right {
+	left:20%;
+	bottom:9%;
+	}
+	.forgot{
+		text-align:center;
+		margin:5px 2px;
+	}
+	.forgot h3 a{
+		float:none;
+		font-size:14px;
+	}
+	input[type="submit"]{
+		font-size:15px;
+		padding: 10px 10px;
+		width:56%;
+		float:none;
+		margin-top: 5px;
+	}
+	.arrow {
+		background: url(../images/icons.png) no-repeat -62px -6px;
+		left: 29%;
+		top: 62.99%;
+	}
+
+}

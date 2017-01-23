@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    margin-top: 3em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2em;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+}
+
+form {
+    display: block;
+    margin-top: 4em;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
